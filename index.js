@@ -32,6 +32,12 @@ function closeMenu() {
   nav_el.style.right = "-1000px";
 }
 
+links.forEach(link => {
+  link.onclick = () => {
+    closeMenu();
+  }
+})
+
 // cv script
 const checkbox = document.querySelector('.input');
 const downloadLink = document.getElementById('cvDownloadLink');
