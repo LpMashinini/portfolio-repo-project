@@ -19,6 +19,7 @@ const circles = document.querySelectorAll(".circle");
 const links = document.querySelectorAll(".link");
 const name = document.querySelector(".name");
 const btn_submit = document.querySelector(".btns");
+const menuBar = document.querySelector(".fa-bars"); 
 
 
 
@@ -26,8 +27,8 @@ const btn_submit = document.querySelector(".btns");
 
 function openMenu() {
   nav_el.style.right = "0px";
-}
 
+}
 function closeMenu() {
   nav_el.style.right = "-1000px";
 }
@@ -183,4 +184,8 @@ ScrollReveal().reveal(".input-col", {
 ScrollReveal().reveal(".icon", {
   delay: 300,
   origin: "right",
+});
+ScrollReveal().reveal(".right", {
+  delay: 300,
+  origin: "left",
 });
