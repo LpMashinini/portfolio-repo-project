@@ -1146,7 +1146,7 @@ footer .footer p {
   .projects-section  {
     padding-top: 30rem;
     overflow: visible;
-    padding-bottom: 80rem;
+    padding-bottom: 100rem;
   }
 }
 
@@ -1182,7 +1182,7 @@ footer .footer p {
   .projects-section  {
     padding-top: 50rem;
     overflow: visible;
-    padding-bottom: 40rem;
+    padding-bottom: 80rem;
   }
 }
 
@@ -1193,7 +1193,7 @@ footer .footer p {
   .projects-section  {
     padding-top: 20rem;
     overflow: visible;
-    padding-bottom: 10rem;
+    padding-bottom: 20rem;
   }
 }
 
@@ -1211,6 +1211,6 @@ footer .footer p {
   .projects-section  {
     padding-top: 10rem;
     overflow: visible;
-    padding-bottom: 40rem;
+    padding-bottom: 60rem;
   }
 }
