@@ -354,7 +354,7 @@ nav {
 
 .about-section {
   background-color: var(--secondaryColor);
-  padding: 70px 60px;
+  padding: 90px 60px;
   overflow: hidden;
 }
 
@@ -363,6 +363,7 @@ nav {
   text-transform: capitalize;
   font-size: 2rem;
   margin-bottom: 5rem;
+  margin-top: 5rem;
 }
 .about-text {
   width: 90%;
@@ -444,7 +445,8 @@ nav {
 
 .Tools {
   background-color: var(--secondaryColor);
-  padding: 60px 50px;
+  padding: 0px 50px;
+  margin-top: -455rem;
 }
 
 .Tools .toolHeader{
@@ -540,7 +542,8 @@ nav {
 
 .projects-section {
   background-color: var(--secondaryColor);
-  padding: 0 50px;
+  padding: 50px 50px;
+  margin-top: -65rem;
 }
 
 .projects-container {
@@ -553,6 +556,7 @@ nav {
   text-align: center;
   text-transform: capitalize;
   font-size: 2rem;
+  margin-top: 5rem;
 }
 
 .projects-container .btn {
@@ -633,6 +637,7 @@ nav {
 .contact-section {
   background-color: var(--secondaryColor);
   padding: 160px 0px 0px 50px;
+  margin-top: -45rem;
 }
 
 
@@ -1176,20 +1181,13 @@ footer .footer p {
   }
 
   .Tools {
-    padding-top: 20rem;
+    padding-bottom: 20rem;
   }
-  .Tools .toolHeader {
-    margin-top: 10rem;
-  }
-
-  .Tools .wrapper {
-    overflow: visible;
-  } 
 
   /* projects  */
 
   .projects-section  {
-    padding-top: 30rem;
+    padding-top: 50rem;
     overflow: visible;
     padding-bottom: 50rem;
   }
@@ -1210,6 +1208,7 @@ footer .footer p {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-top: 0px;
   }
   .contacts-details .left-contacts-details label {
    display: none;
@@ -1246,21 +1245,28 @@ footer .footer p {
   }
 }
 
-@media (min-width: 300px) and (max-width: 400px){
+@media (min-width: 300px){
   .nav-container nav .fa-bars {
     margin-left: 8rem;
   }
-  .Tools {
-   display: none;
-  }
 
   .projects-section  {
-    padding-top: 30rem;
+    padding-top: 45rem;
     overflow: visible;
-    padding-bottom: 60rem;
+    padding-bottom: 90rem;
+    margin-top: 0;
   }
 
+  .contact-section {
+    padding-top: 0rem;
+    margin-top: 0px;
+  }
+  .Tools {
+    display: none;
+    margin-top: 0px;
+  }
 }
+
 @media (min-width: 412px) {
   .nav-container nav .fa-bars {
     margin-left: 10rem;
@@ -1268,24 +1274,23 @@ footer .footer p {
   .projects-section  {
     padding-top: 30rem;
     overflow: visible;
-    padding-bottom: 60rem;
+    padding-bottom: 90rem;
   }
-
   .Tools {
-    padding-top: 20rem;
-  }
-  .Tools .toolHeader {
-    margin-top: 10rem;
+    display: block;
+    padding-top: 30rem;
+    margin-top: 0rem;
   }
 
-  .Tools .wrapper {
-    overflow: visible;
-  } 
 }
 
 @media (min-width: 540px) {
   .nav-container nav .fa-bars {
     margin-left: 20rem;
+  }
+
+  .about-section {
+    padding-bottom: 50rem;
   }
   
   .projects {
@@ -1298,19 +1303,15 @@ footer .footer p {
   .projects-section  {
     padding-top: 50rem;
     overflow: visible;
-    padding-bottom: 60rem;
+    padding-bottom: 115rem;
   }
 
   .Tools {
-    padding-top: 20rem;
-  }
-  .Tools .toolHeader {
-    margin-top: 10rem;
+    display: block;
+    padding-top: 30rem;
+    padding-bottom: 10rem;
   }
 
-  .Tools .wrapper {
-    overflow: visible;
-  } 
 }
 
 @media (min-width: 768px) {
@@ -1326,19 +1327,13 @@ footer .footer p {
   .projects-section  {
     padding-top: 30rem;
     overflow: visible;
-    padding-bottom: 30rem;
+    padding-bottom: 60rem;
   }
 
   .Tools {
-    padding-top: 20rem;
-  }
-  .Tools .toolHeader {
-    margin-top: 10rem;
+    display: block;
   }
 
-  .Tools .wrapper {
-    overflow: visible;
-  } 
 }
 
 @media (min-width: 800px) {
@@ -1352,20 +1347,19 @@ footer .footer p {
   }
 
   .Tools {
-    padding-top: 20rem;
+    display: block;
   }
-  .Tools .toolHeader {
-    margin-top: 10rem;
-  }
-
-  .Tools .wrapper {
-    overflow: visible;
-  } 
 }
 
+
 @media (min-width: 1024px) {
+
   .nav-container nav .fa-bars {
-    margin-left: 50rem;
+    margin-left: 45rem;
+  }
+
+  .about-section {
+    padding-bottom: 70rem;
   }
   .projects {
     display: grid;
@@ -1374,8 +1368,24 @@ footer .footer p {
     margin-top: 40px;
   }
   .projects-section  {
-    padding-top: 10rem;
+    padding-top: 30rem;
     overflow: visible;
+    padding-bottom: 90rem;
+    margin-top: -30rem;
+    margin-bottom: 15rem;
+  }
+
+  .Tools {
+    display: block;
+    margin-top: -60rem;
+    padding-top: 40rem;
     padding-bottom: 30rem;
+  }
+
+  .contact-section {
+    margin-top: -70rem;
+    padding-top: 30rem;
+    padding-bottom: 40rem;
+    padding-top: 30rem;
   }
 } 
