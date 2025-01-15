@@ -57,8 +57,8 @@ body {
 .container {
   width: 100%;
   height: 100vh;
-  background-color: var(--secondaryColor);
   overflow: hidden;
+  background-color: var(--secondaryColor);
 }
 
 #icon.active {
@@ -234,7 +234,7 @@ nav {
 
 .header-content-container {
   display: flex;
-  flex-direction: column;
+  overflow: hidden;
 }
 
 .header-content {
@@ -349,12 +349,11 @@ nav {
   color: var(--primaryColor);
 }
 
-
 /* about section  styles starts here*/
 
 .about-section {
   background-color: var(--secondaryColor);
-  padding: 70px 60px;
+  padding: 160px 60px;
   overflow: hidden;
 }
 
@@ -434,117 +433,17 @@ nav {
 .about-details div p{
   color: rgb(57, 57, 57);
   text-transform: capitalize;
-  margin-bottom: 30px;
-}
-
-
-
-
-/* tools i use style */
-
-.Tools {
-  background-color: var(--secondaryColor);
-  padding: 60px 50px;
-}
-
-.Tools .toolHeader{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.Tools .toolHeader h1 {
-  color:var(--primaryColor);
-  text-transform: capitalize;
-}
-
-.Tools .toolHeader .line {
-  width: 90px;
-  height: 3.5px;
-  background-color: var(--primaryColor);
-  border-radius: 5px;
-  margin: 15px 0;
-}
-
-.Tools .toolHeader .line.active-line {
-  background-color: var(--textColor);
-}
-
-.wrapper {
-  border-radius: 6px;
-  width: 90%;
-  max-width: 1500px;
-  height: 100px;
-  margin-inline: auto;
-  margin-top: 5rem;
-  position: relative;
-  overflow: hidden;
-  mask-image: linear-gradient(
-    to right,
-     rgba(0,0,0,0),
-     rgba(0,0,0,1) 20%,
-     rgba(0,0,0,1) 80%,
-     rgba(0,0,0,0)
-  );
-}
-
-.item {
-  width: 90px;
-  height: 90px;
-  position: absolute;
-  cursor: pointer;
-  left: max(calc(200px * 7), 100%);
-  animation-name: scrollLeft;
-  animation-duration: 30s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-
-.item img{
-  width: 60px;
-  height: 60px;
-  object-fit: cover;
-}
-
-.item1 {
-  animation-delay: calc(30s / 7 *(8 - 1) * -1);
-}
-.item2 {
-  animation-delay: calc(30s / 7 *(8 - 2) * -1);
-}
-.item3 {
-  animation-delay: calc(30s / 7 *(8 - 3) * -1);
-}
-.item4 {
-  animation-delay: calc(30s / 7 *(8 - 4) * -1);
-}
-.item5 {
-  animation-delay: calc(30s / 7 *(8 - 5) * -1);
-}
-.item6 {
-  animation-delay: calc(30s / 7 *(8 - 6) * -1);
-}
-.item7 {
-  animation-delay: calc(30s / 7 *(8 - 7) * -1);
-}
-
-
-
-@keyframes scrollLeft {
-  to {
-    left: -200px;
-  }
 }
 /* projects section styles starts here */
 
 .projects-section {
   background-color: var(--secondaryColor);
-  padding: 0 50px;
+  padding: 160px 50px;
 }
 
 .projects-container {
   display: flex;
+  /* flex-wrap: wrap; */
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -1078,7 +977,7 @@ footer .footer p {
 
   .nav-container nav ul {
     position: fixed;
-    top: 0;
+    top: 4.8rem;
     right: -1000px;
     background-color: var(--secondaryColor);
     box-shadow: -2px 2px 2px black;
@@ -1154,7 +1053,7 @@ footer .footer p {
     display: none;
   }
 
-   /* about section  */
+  /* about section */
 
   .about-section {
     overflow: visible;
@@ -1175,23 +1074,12 @@ footer .footer p {
     margin-bottom: 30px;
   }
 
-  .Tools {
-    padding-top: 20rem;
-  }
-  .Tools .toolHeader {
-    margin-top: 10rem;
-  }
-
-  .Tools .wrapper {
-    overflow: visible;
-  } 
-
-  /* projects  */
+  /* projects */
 
   .projects-section  {
-    padding-top: 30rem;
+    padding-top: 50rem;
     overflow: visible;
-    padding-bottom: 50rem;
+    padding-bottom: 70rem;
   }
 
   #addProject {
@@ -1202,7 +1090,7 @@ footer .footer p {
     display: none;
   }
 
-   /* contact section  */
+  /* contact section */
 
 
   .contacts-details {
@@ -1233,7 +1121,7 @@ footer .footer p {
     display: none;
   }
 
-   /* footer  */
+  /* footer */
 
   .footer {
     width: 100%;
@@ -1246,20 +1134,10 @@ footer .footer p {
   }
 }
 
-@media (min-width: 300px) and (max-width: 400px){
+@media (min-width: 300px) {
   .nav-container nav .fa-bars {
     margin-left: 8rem;
   }
-  .Tools {
-   display: none;
-  }
-
-  .projects-section  {
-    padding-top: 30rem;
-    overflow: visible;
-    padding-bottom: 60rem;
-  }
-
 }
 @media (min-width: 412px) {
   .nav-container nav .fa-bars {
@@ -1268,19 +1146,8 @@ footer .footer p {
   .projects-section  {
     padding-top: 30rem;
     overflow: visible;
-    padding-bottom: 60rem;
+    padding-bottom: 80rem;
   }
-
-  .Tools {
-    padding-top: 20rem;
-  }
-  .Tools .toolHeader {
-    margin-top: 10rem;
-  }
-
-  .Tools .wrapper {
-    overflow: visible;
-  } 
 }
 
 @media (min-width: 540px) {
@@ -1300,17 +1167,6 @@ footer .footer p {
     overflow: visible;
     padding-bottom: 60rem;
   }
-
-  .Tools {
-    padding-top: 20rem;
-  }
-  .Tools .toolHeader {
-    margin-top: 10rem;
-  }
-
-  .Tools .wrapper {
-    overflow: visible;
-  } 
 }
 
 @media (min-width: 768px) {
@@ -1324,21 +1180,10 @@ footer .footer p {
     margin-top: 40px;
   }
   .projects-section  {
-    padding-top: 30rem;
+    padding-top: 50rem;
     overflow: visible;
-    padding-bottom: 30rem;
+    padding-bottom: 60rem;
   }
-
-  .Tools {
-    padding-top: 20rem;
-  }
-  .Tools .toolHeader {
-    margin-top: 10rem;
-  }
-
-  .Tools .wrapper {
-    overflow: visible;
-  } 
 }
 
 @media (min-width: 800px) {
@@ -1350,26 +1195,11 @@ footer .footer p {
     overflow: visible;
     padding-bottom: 20rem;
   }
-
-  .Tools {
-    padding-top: 20rem;
-  }
-  .Tools .toolHeader {
-    margin-top: 10rem;
-  }
-
-  .Tools .wrapper {
-    overflow: visible;
-  } 
 }
 
 @media (min-width: 1024px) {
   .nav-container nav .fa-bars {
     margin-left: 50rem;
-  }
-
-  .Tools {
-    display: none;
   }
 
   .projects {
@@ -1381,6 +1211,6 @@ footer .footer p {
   .projects-section  {
     padding-top: 10rem;
     overflow: visible;
-    padding-bottom: 30rem;
+    padding-bottom: 50rem;
   }
-} 
+}

@@ -20,6 +20,7 @@ const links = document.querySelectorAll(".link");
 const name = document.querySelector(".name");
 const btn_submit = document.querySelector(".btns");
 const menuBar = document.querySelector(".fa-bars"); 
+const spanLine = document.querySelectorAll(".line"); 
 
 
 
@@ -87,6 +88,7 @@ function darkMode() {
   texts.forEach( text => text.classList.add("active-light"));
   circles.forEach( circle => circle.classList.add("active-circle"));
   links.forEach( link => link.classList.add("link-circle"));
+  spanLine.forEach( line => line.classList.add("active-line"));
   nav_el.classList.add("active-nav-el");
   name.classList.add("active-name");
   btn_submit.classList.add("active-submit");
@@ -107,6 +109,7 @@ function lightMode() {
   texts.forEach( text => text.classList.remove("active-light"));
   circles.forEach( circle => circle.classList.remove("active-circle"));
   links.forEach( link => link.classList.remove("link-circle"));
+  spanLine.forEach( line => line.classList.remove("active-line"));
   nav_el.classList.remove("active-nav-el");
   name.classList.remove("active-name");
   btn_submit.classList.remove("active-submit");
