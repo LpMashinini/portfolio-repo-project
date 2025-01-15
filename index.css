@@ -1367,11 +1367,6 @@ footer .footer p {
   .nav-container nav .fa-bars {
     margin-left: 50rem;
   }
-
-  .Tools {
-    display: none;
-  }
-
   .projects {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
