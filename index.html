@@ -7,6 +7,8 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="index.css" />
     <script src="https://unpkg.com/scrollreveal"></script>
+
+   
 </head>
 
 <body>
@@ -14,9 +16,12 @@
         <div class="nav-container">
             <nav>
                 <div class="logo-container">
-                    <h2 class="dark">
-                        <i class="fa-solid fa-graduation-cap"></i>LP Matshinini
-                    </h2>
+                    <a href="#home">
+                        <h2 class="dark">
+                            <i class="fa-solid fa-graduation-cap"></i>LP Matshinini
+                        </h2>
+                    </a>
+                   
                 </div>
 
                 <ul class="nav-el">
@@ -66,8 +71,7 @@
                         <p class="title">Download CV</p>
                         <p class="title"></p>
 
-                        <a href="My_RESUME.pdf"
-                            id="cvDownloadLink" download style="display: none"></a>
+                        <a href="My_RESUME.pdf" id="cvDownloadLink" download style="display: none"></a>
                     </label>
 
 
@@ -176,11 +180,11 @@
     <!-- about section ends here -->
 
     <!-- Projects section starts here -->
-    <section class="projects-section container" >
+    <section class="projects-section container">
         <div class="projects-container">
             <h2 class="headerSection dark" id="projects">my projects</h2>
 
-            <div class="projects" >
+            <div class="projects">
                 <div class="projects1 bottom">
                     <!-- project 1 -->
 
@@ -277,10 +281,34 @@
     <!-- Contacts section starts here -->
 
     <section class="contact-section container">
+
+        <h2 class="headerSection dark">contact me</h2>
+
         <div class="contact-content">
             <div class="contacts-details">
+
+                <div class="right">
+                    <div class="input-container">
+                        <div class="input-col">
+                            <i class="fa-solid fa-user inputIcon"></i>
+                            <input type="text" id="name"  placeholder="Enter name" required />
+                        </div>
+
+                        <div class="input-col">
+                            <i class="fa-solid fa-envelope inputIcon"></i>
+                            <input type="email" class="email" placeholder="Enter email"  required />
+                        </div>
+
+                        <div class="input-col">
+                            <i class="fa-solid fa-message inputIcon"></i>
+                            <textarea   class="message" placeholder="Message"></textarea>
+                        </div>
+
+                        <button class="btns submit-btn"  onclick="sendMail()">Submit</button>
+                    </div>
+                </div>
+
                 <div class="left-contacts">
-                    <h2 class="headerSection dark">contact me</h2>
 
                     <div class="left-contacts-details">
                         <p class="text dark">
@@ -300,26 +328,7 @@
                     </div>
                 </div>
 
-                <div class="right">
-                    <div class="input-container">
-                        <div class="input-col">
-                            <i class="fa-solid fa-user inputIcon"></i>
-                            <input type="text" placeholder="your name" required />
-                        </div>
-
-                        <div class="input-col">
-                            <i class="fa-solid fa-envelope inputIcon"></i>
-                            <input type="email" placeholder="your email" required />
-                        </div>
-
-                        <div class="input-col">
-                            <i class="fa-solid fa-message inputIcon"></i>
-                            <textarea placeholder="Message"></textarea>
-                        </div>
-
-                        <button class="btns" type="submit">Submit</button>
-                    </div>
-                </div>
+               
             </div>
         </div>
     </section>
@@ -344,8 +353,27 @@
 
     <!-- footer section ends here -->
 
-    <script src="https://kit.fontawesome.com/b0e5731180.js" crossorigin="anonymous"></script>
+
+
+
+
+    <!-- script email -->
+
     <script src="index.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "MUSpLlAzzZKPbd9tm",
+            });
+        })();
+    </script>
+
+ 
+
+    <script src="https://kit.fontawesome.com/b0e5731180.js" crossorigin="anonymous"></script>
+   
 </body>
 
 </html>
