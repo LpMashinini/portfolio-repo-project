@@ -83,8 +83,8 @@ body {
 }
 
 .nav-container.active-nav-bag{
-  background-color: rgb(37, 43, 105);
-  border-bottom: 1px solid  rgb(64, 72, 170);
+  background: linear-gradient(90deg, rgba(2,15,36,1) 0%, rgba(45,11,56,1) 100%);
+  border-bottom: 1px solid  linear-gradient(90deg, rgba(2,15,36,1) 0%, rgba(45,11,56,1) 100%);
 }
 
 .nav-container nav ul {
@@ -909,6 +909,24 @@ nav {
   justify-content: space-between;
 }
 
+.home {
+  position: relative;
+}
+.home .fa-arrow-up {
+  position: absolute;
+  bottom: 0px;
+  right: 60px;
+  background-color: var(--primaryColor);
+  color: var(--textColor);
+  padding: 20px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.home .fa-arrow-up.active-dark {
+  background-color: var(--textColor);
+  color:  var(--primaryColor);
+}
+
 
 /* download button styles  */
 
@@ -1137,23 +1155,10 @@ footer {
   background-color: var(--footerbgColor);
 }
 
-.home {
-  position: relative;
-}
-.home .fa-arrow-up {
-  position: absolute;
-  bottom: 20px;
-  right: 40px;
-  background-color: black;
-  color: white;
-  padding: 20px;
-  border-radius: 50%;
-  transition: 0.5s;
-}
 
-.home:hover > .fa-arrow-up {
-  transform: translateY(-50%);
-}
+
+
+
 
 .footer {
   display: flex;

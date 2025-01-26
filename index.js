@@ -21,6 +21,7 @@ const name = document.querySelector(".name");
 const btn_submit = document.querySelector(".btns");
 const menuBar = document.querySelector(".fa-bars");
 const spanLine = document.querySelectorAll(".line");
+const arrow_up = document.querySelector(".fa-arrow-up");
 
 
 
@@ -52,24 +53,6 @@ checkbox.addEventListener('change', function () {
 
 // Dark Mode Script
 
-// scroll bar
-
-const nextBtn = document.querySelector(".fa-arrow-right");
-const backBtn = document.querySelector(".fa-arrow-left");
-const galleryScroll = document.querySelector(".projects");
-
-nextBtn.addEventListener("click", () => {
-  galleryScroll.scrollLeft += 200;
-  galleryScroll.style.scrollBehavior = "smooth";
-});
-
-backBtn.addEventListener("click", () => {
-  galleryScroll.scrollLeft -= 200;
-  galleryScroll.style.scrollBehavior = "smooth";
-});
-
-
-
 
 // function for dark/light mode
 
@@ -94,7 +77,7 @@ icon.addEventListener('click', toggleMode)
 
 function darkMode() {
 
-  iconContainers.forEach(iconContainer => iconContainer.style.background = "rgb(13, 19, 76)");
+  iconContainers.forEach(iconContainer => iconContainer.style.background = ' linear-gradient(90deg, rgba(2,15,36,1) 0%, rgba(45,11,56,1) 100%)');
   Icons.forEach(Icon => Icon.classList.add("active"));
   labels.forEach(label => label.classList.add("active-label"));
   iconSvgs.forEach(iconSvg => iconSvg.classList.add("activesvg"));
@@ -112,6 +95,7 @@ function darkMode() {
   nav_el.classList.add("active-nav-el");
   name.classList.add("active-name");
   btn_submit.classList.add("active-submit");
+  arrow_up.classList.add("active-dark");
 }
 
 function lightMode() {
@@ -134,7 +118,7 @@ function lightMode() {
   title.classList.remove('active-title');
   name.classList.remove("active-name");
   btn_submit.classList.remove("active-submit");
-
+  arrow_up.classList.remove("active-dark");
 }
 
 // Project section script
