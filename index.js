@@ -52,6 +52,25 @@ checkbox.addEventListener('change', function () {
 
 // Dark Mode Script
 
+// scroll bar
+
+const nextBtn = document.querySelector(".fa-arrow-right");
+const backBtn = document.querySelector(".fa-arrow-left");
+const galleryScroll = document.querySelector(".projects");
+
+nextBtn.addEventListener("click", () => {
+  galleryScroll.scrollLeft += 200;
+  galleryScroll.style.scrollBehavior = "smooth";
+});
+
+backBtn.addEventListener("click", () => {
+  galleryScroll.scrollLeft -= 200;
+  galleryScroll.style.scrollBehavior = "smooth";
+});
+
+
+
+
 // function for dark/light mode
 
 
@@ -75,7 +94,7 @@ icon.addEventListener('click', toggleMode)
 
 function darkMode() {
 
-  iconContainers.forEach(iconContainer => iconContainer.style.background = "rgb(37, 43, 105)");
+  iconContainers.forEach(iconContainer => iconContainer.style.background = "rgb(13, 19, 76)");
   Icons.forEach(Icon => Icon.classList.add("active"));
   labels.forEach(label => label.classList.add("active-label"));
   iconSvgs.forEach(iconSvg => iconSvg.classList.add("activesvg"));
@@ -120,10 +139,11 @@ function lightMode() {
 
 // Project section script
 
-project_btn.addEventListener("click", () => {
-  add_projects.classList.toggle("active-project");
-  alert("Resize screen");
-});
+// project_btn.addEventListener("click", () => {
+//   add_projects.classList.toggle("active-project");
+//   alert("Resize screen");
+// });
+
 
 // Scroll script
 
