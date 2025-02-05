@@ -96,6 +96,7 @@ function darkMode() {
   name.classList.add("active-name");
   btn_submit.classList.add("active-submit");
   arrow_up.classList.add("active-dark");
+  icon.classList.add("fa-sun");
 }
 
 function lightMode() {
@@ -119,6 +120,7 @@ function lightMode() {
   name.classList.remove("active-name");
   btn_submit.classList.remove("active-submit");
   arrow_up.classList.remove("active-dark");
+  icon.classList.remove("fa-sun");
 }
 
 // Project section script

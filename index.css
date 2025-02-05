@@ -38,9 +38,9 @@
   --font2: "Playfair Display", serif;
 }
 
-body {
+/* body {
   background-color: var(--secondaryColor);
-}
+} */
 
 
 /* Header styles starts here */
@@ -166,30 +166,40 @@ nav {
   margin: 0px 10px;
 }
 
-.toggleContainer {
-  background-color: var(--textColor);
-  box-shadow: -1px 2px 2px 2px rgb(192, 189, 189);
+/* .toggleContainer {
+   background-color: var(--textColor);
+  box-shadow: -1px 2px 2px 2px rgb(192, 189, 189); 
   border-radius: 50%;
   cursor: pointer;
   padding: 20px;
   width: 50px;
   height: 50px;
+
   margin-left: 10rem;
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} 
+   .toggleContainer.active {
+  background-color: var(--textColor);
+} */
 
-.toggleContainer.active {
+ .light-dark{
+  color: var(--primaryColor);
+  margin-left: 10rem;
+  font-size: 25px;
+  border-radius: 50%;
+  padding: 10px;
   background-color: var(--textColor);
 }
 
-.toggleContainer .fa-solid {
+.light-dark.fa-sun {
+  background-color: var(--textColor);
   color: var(--primaryColor);
-  font-size: 20px;
 }
-.toggleContainer .fa-solid.activeIcon {
-  color: var(--secondaryTextColor);
+
+.fa-solid.activeIcon {
+  color: var(--primaryColor);
   font-size: 25px;
 }
 
@@ -353,6 +363,21 @@ nav {
   color: var(--primaryColor);
 }
 
+.top-socials {
+  position: absolute;
+  top: 87%;
+  left: 70px;
+}
+.top-socials .fa-brands {
+  color: var(--primaryColor);
+  cursor: pointer;
+  border: 1px solid var(--primaryColor);
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 8px;
+  font-size: 20px;
+  margin: 0px 10px;
+}
 
 /* about section  styles starts here*/
 
@@ -1155,11 +1180,6 @@ footer {
   background-color: var(--footerbgColor);
 }
 
-
-
-
-
-
 .footer {
   display: flex;
   align-items: center;
@@ -1195,13 +1215,13 @@ footer .footer p {
 
 @media (max-width: 1200px) {
   .logo-container {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .nav-container nav ul {
     position: fixed;
     top: 0;
-    right: 0px;
+    right: -1000px;
     background-color: var(--secondaryColor);
     box-shadow: -2px 2px 2px black;
     width: 300px;
@@ -1238,7 +1258,7 @@ footer .footer p {
 
   .nav-container nav .fa-bars {
     display: block;
-    margin-right: 15rem;
+    margin-right: 5rem;
   }
 
   .nav-container nav ul .fa-xmark {
@@ -1254,7 +1274,7 @@ footer .footer p {
     left: 30px;
   }
 
-  .nav-container .toggleContainer {
+  nav .light-dark {
     display: none;
   }
 
@@ -1287,7 +1307,9 @@ footer .footer p {
     margin-right: -4rem;
   }
 
-  
+  .top-socials {
+    display: none;
+  }
 
    /* about section  */
 
@@ -1394,10 +1416,15 @@ footer .footer p {
   }
 }
 
-@media (min-width: 300px){
-  .nav-container nav .fa-bars {
-    margin-left: 8rem;
+ @media (max-width: 400px) {
+
+  .container {
+    width: 109%;
   }
+  .nav-container nav .fa-bars {
+    margin-right: 1rem;
+  }
+
 
   .projects-section  {
     padding-top: 45rem;
@@ -1419,7 +1446,7 @@ footer .footer p {
     margin-left: -2rem;
   }
 
-}
+} 
 
 @media (min-width: 412px) {
   .nav-container nav .fa-bars {
